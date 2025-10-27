@@ -1,4 +1,6 @@
 # scripts/preprocess_drugbank.py
+# curl -Lfv -o filename.zip -u yinyang@kth.se:PASSWORD 
+# https://go.drugbank.com/releases/5-1-13/downloads/all-full-database
 
 import pandas as pd
 import os
