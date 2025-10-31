@@ -1,0 +1,31 @@
+# 数据配置
+data:
+  drugbank_path: "./data/raw/drugbank.xml"
+  bindingdb_path: "./data/raw/bindingdb_curated.csv"
+  gdsc_path: "./data/raw/gdsc_data.csv"
+  uniprot_path: "./data/raw/uniprot_sprot.xml"
+  disgenet_path: "./data/raw/disgenet_curated.csv"
+  output_dir: "./data/processed"
+  
+# 模型配置
+model:
+  drug_dim: 2048
+  protein_dim: 1024
+  hidden_dim: 256
+  gnn_layers: 3
+  attention_heads: 8
+  dropout_rate: 0.2
+  
+# 训练配置
+training:
+  batch_size: 32
+  learning_rate: 0.001
+  epochs: 100
+  early_stopping_patience: 10
+  validation_split: 0.2
+  test_split: 0.1
+  
+# 评估配置
+evaluation:
+  metrics: ["mse", "rmse", "mae", "r2"]
+  cross_validation_folds: 5
