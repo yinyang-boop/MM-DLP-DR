@@ -1,10 +1,52 @@
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-tqdm
-rdkit-pypi
-chembl_webresource_client
-requests
-joblib
+# 核心依赖
+torch==2.0.1
+torch-geometric==2.3.1
+torchvision==0.15.2
+torchaudio==2.0.2
+
+# 数据处理
+numpy==1.24.3
+pandas==2.0.2
+scipy==1.10.1
+scikit-learn==1.2.2
+networkx==3.1
+
+# 生物信息学
+biopython==1.81
+rdkit==2023.3.1
+deepchem==2.7.1
+
+# Transformer模型
+transformers==4.30.2
+sentencepiece==0.1.99
+protobuf==3.20.3
+
+# ESM蛋白质语言模型
+fair-esm==2.0.0
+esm==2.0.1
+
+# 可视化
+matplotlib==3.7.1
+seaborn==0.12.2
+plotly==5.15.0
+
+# 超参数优化
+optuna==3.2.0
+ray[tune]==2.4.0
+
+# 其他工具
+tqdm==4.65.0
+pyyaml==6.0
+requests==2.31.0
+beautifulsoup4==4.12.2
+lxml==4.9.2
+
+# Jupyter支持
+jupyter==1.0.0
+ipykernel==6.24.0
+ipywidgets==8.0.7
+
+# 开发工具
+black==23.3.0
+flake8==6.0.0
+pytest==7.3.1
